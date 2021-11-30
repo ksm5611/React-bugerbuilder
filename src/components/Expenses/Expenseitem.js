@@ -3,7 +3,7 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 import "./Expenseitem.css";
 
-function Expenseitem(props) {
+const Expenseitem = (props) => {
   const [title, setTitle] = useState(props.title);
   const clickHandler = () => {
     setTitle("updated!");
@@ -19,6 +19,6 @@ function Expenseitem(props) {
       <button onClick={clickHandler}>change title</button>
     </Card>
   );
-}
+};
 
 export default Expenseitem;
